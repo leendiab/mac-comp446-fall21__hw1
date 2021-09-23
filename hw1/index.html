@@ -1,3 +1,137 @@
-<!-- this is an empty HTML file you will add all your code here for this assignment. Please remember about HTML document structures and follow the instructions on HW1 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Molly E. Mozzarella's Pizza Parlor</title>
+    <!-- beginning embedded CSS styles -->
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:400,700,900|Press+Start+2P');
+        * {
+        box-sizing: border-box;
+        }
+        html {
+        margin: 0;
+        padding: 0;
+        }
+        body {
+        font-family: Roboto, sans-serif;
+        max-width: 48rem;
+        margin: 0 auto;
+        padding: 0;
+        padding-bottom: 20rem;
+        font-size: 16px;
+        background: url('https://jxjj.github.io/mollys-menu/img/space-invader.svg')
+            no-repeat bottom,
+            url('https://jxjj.github.io/mollys-menu/img/pacman.svg') no-repeat left,
+            url('https://jxjj.github.io/mollys-menu/img/shooter-eat.svg') no-repeat
+            right 15%;
+        /* added background color */
+        background-color: #FAAFF3;
+        }
 
-<!-- please delete these comments when you get started -->
+        img { 
+            padding: 30px;
+        }
+
+        :root {
+        --logo-font-size: 5.9rem;
+        --logo-margin-left: -0.06em;
+        --logo-line-height: 0.75;
+        }
+
+        /* Logo */
+        h1 {
+        font-size: var(--logo-font-size);
+        font-weight: 900;
+        line-height: 0.75;
+        margin: 0;
+        text-transform: uppercase;
+        color: #ff239d;
+        }
+        h1 span {
+        display: block;
+        margin-bottom: 0.125rem;
+        }
+        h1 .line-1 {
+        font-size: 1.5rem;
+        font-family: 'Roboto Condensed', sans-serif;
+        margin-left: -0.05em;
+        }
+        h1 .line-2,
+        h1 .line-3 {
+        margin-left: var(--logo-margin-left);
+        }
+        h1 .and-video {
+        font-family: 'Press Start 2P', monospace;
+        font-size: 1rem;
+        line-height: 0.9;
+        margin-left: 0;
+        }
+
+        /* section headings */
+        h2 {
+        background: url('https://jxjj.github.io/mollys-menu/img/section-bg.png');
+        background-size: 100%;
+        font-size: var(--logo-font-size);
+        /* changed font color */
+        color: #FCF592;
+        text-transform: uppercase;
+        position: relative;
+        z-index: -10;
+        margin: 1em 1em -0.75em var(--logo-margin-left);
+        line-height: var(--logo-line-height);
+        min-width: 21rem;
+        }
+
+        p,
+        h3,
+        h4,
+        h5 {
+        max-width: 80%;
+        font-size: 2rem;
+        margin: 1em auto 0.25em;
+        font-weight: bold;
+        }
+
+        h3 {
+        margin: 1em auto 0.25em;
+        color: #b113d2;
+        /* changed font family */
+        font-family: monospace;
+        }
+        h3 + p {
+        font-weight: normal;
+        font-size: 1.25rem;
+        margin-top: 0;
+    }
+    </style>
+</head>
+<body>
+    <h1>Molly E. Mozzarella's Pizza Parlor</h1>
+    <h2>Prices
+        <img src="pizza-64.gif" alt="spinning pizza" style="float: left; width: 180px; height: 180px">
+    </h2>
+    <p style="color: #b113d2; font-family: monospace;">Large: $18 <br> Medium: $15 <br> Small: $12</p>
+    <h2>Molly's Menu</h2>
+    <h3>The Luau</h3>
+    <p>Hawaiian smoked ham, sweet maple bacon, pineapple, cheddar and mozzarella cheese, and our famous homemade pizza sauce.</p>
+    <h3>The Tatonka</h3>
+    <p>Our signature spicy buffalo sausage, onions, green peppers, black olives, fresh tomato, and fresh mozzarella.</p>
+    <h3>The Metropolitan</h3>
+    <p>Savory Steak, onions, mushrooms, roasted green and red peppers, fresh garlic, black olives, and mozzarella and Parmesan cheese.</p>
+    <h3>The Super Taco Mexicana</h3>
+    <p>Chunky salsa sauce, lean ground beef, onions and mozzarella cheese baked in the oven and then loaded with fresh sour cream, lettuce, tomatoes, and cheddar cheese.</p>
+    <h3>The New York City Deli</h3>
+    <p>Lots of meat: Ham, Bacon, Pepperoni, and Mozzarella, with another layer of Pepperoni, Spicy Sausage, Onion and Fresh Garlic. Angioplasty not included.</p>
+    <h3>The Hildagrun
+        <img src="dripping_pizza.gif" alt="flying cheezy pizza slice" style="float: right; width: 250px; height: 250px;">
+    </h3>
+    <p>Sausage, bacon, onions, sauerkraut with tons of fresh cheese.</p>
+    <h3>The Cheeser Cheeser</h3>
+    <p>Lots of Mozzarella, Cheddar, Parmesan, Provolone, Gouda, and Feta cheeses. Delish.</p>
+    <h3>The Tree Hugger</h3>
+    <p>Fresh organic and locally grown vegetables: green peppers, onions, tomatoes, carrots, eggplant, mushrooms, black and green olives, and basil leaf swimming with our delicious fresh garden garlic tomato sauce and made with choice of mozzarella or soy cheese.</p>
+    <h3>Man'ousheh with Za'taar</h3>
+    <p>Classical leventine delicacy with Za'taar spices on a soft, fluffy bread base. Topped with delicious olive oil from Palestine.</p>
+    <script async src="https://jxjj.github.io/mollys-menu/main.js"></script>
+</body>
